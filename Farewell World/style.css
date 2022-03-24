@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+body{
+    font-family: "LoRes 12 OT Bold", "LoRes 12 OT Bold Alt Oakland";
+    font-size: 24px;
+	background-color: black;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+header{
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    background-color: black;
+}
+
+h1{
+    color: red;
+	font-size: 46px;
+	margin: 20px;
+	text-align: center;
+}
+
+p{
+	color: aliceblue;
+	font-size: 20px;
+	margin: 20px;
+}
+
+ul{
+	list-style: none;
+	margin: 20px;
+	padding: 0;
+}
+
+
+
+a {
+    color: rgb(255, 0, 111);
+}
+
+
+
+
+@media only screen and (min-width: 600px) { 
+body{
+    font-family: "LoRes 12 OT Bold", "LoRes 12 OT Bold Alt Oakland";
+    font-size: 24px;
+}
+	
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+header{
+    width: 60%;
+    margin: auto;
+    height: 300px;
+    background-color: black;
+}
+
+#container{
+    width: 60%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+	color: red;
+	font-size: 72px;
+}
+
+#units{
+    display: flex;
+    flex-direction: row;
+}
+
+#units p {
+    margin: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+}
+
+a {
+    color: rgb(255, 0, 111);
+}
+}

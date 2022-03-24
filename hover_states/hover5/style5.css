@@ -1,0 +1,91 @@
+@charset "UTF-8";
+body { 
+	height: 100vh; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	background-color:#FA8A3B;
+}
+
+a { font-family: helvetica, arial; 
+	color: white;
+	text-decoration: none; 
+	font-weight: bold; 
+	font-size: 60px; 
+	text-shadow: 10px 10px 0px rgba(0,0,255,0.05);
+}
+
+@-webkit-keyframes bob {
+  0% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bob {
+  0% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes bob-float {
+  100% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-
+      15px);
+  }
+}
+
+@keyframes bob-float {
+  100% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bob, .bob:hover, .bob:focus, .bob:active {
+  -webkit-animation-name: bob-float, bob;
+  animation-name: bob-float, bob;
+  -webkit-animation-duration: .5s, 2.5s;
+  animation-duration: .5s, 2.5s;
+  -webkit-animation-delay: 0s, .5s;
+  animation-delay: 0s, .5s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
